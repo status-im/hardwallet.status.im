@@ -1,0 +1,78 @@
+.welcome-block {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 56px 0;
+}
+
+.welcome-block__top {
+  display: flex;
+  justify-content: center;
+  width: 360px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-block__image {
+  width: 126px;
+  height: 138px;
+  background-image: url(../img/new-site/welcome@2x.png);
+  background-size: 126px;
+  background-position: center;
+  margin: 0 0 16px 0;
+}
+
+.welcome-block__top h2 {
+  font-family: $PostGroteskMedium;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 0 0 10px 0;
+}
+
+.welcome-block__top p {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  opacity: .5;
+}
+
+.welcome-block .button {
+  width: 200px;
+}
+
+.welcome-home-link {
+  padding: 12px 0 0 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  transition: opacity .2s ease;
+  opacity: .5
+}
+
+.welcome-home-link:hover {
+  opacity: 1
+}
+
+@media (max-width: 740px) {
+
+.welcome-block__top {
+  width: 100%;
+  padding: 0 32px;
+}
+
+.welcome-block__top h2 {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0 24px;
+  }
+
+.welcome-block__top p {
+    padding: 0 24px;
+  }
+
+.welcome-block__image {
+    transform: scale(.9);
+  }
+}

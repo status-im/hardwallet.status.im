@@ -1,0 +1,53 @@
+.slide.slide--three .slide__inner {
+  text-align: center;
+  margin: 60px 0 60px 0
+}
+
+.slide__text {
+  width: 420px;
+}
+
+.slide__text h2 {
+  font-family: $PostGroteskMedium;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 31px;
+  margin: 0 0 10px 0;
+}
+
+.slide__text .text {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  opacity: .5
+}
+
+.slide__text .button {
+  display: inline-block;
+}
+
+@media (max-width: 740px) {
+  .slide__text {
+    width: auto;
+    padding: 0 24px;
+  }
+
+  .slide__text h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .slide__text .button {
+    width: 200px
+  }
+
+  .slide.slide--three .slide__inner {
+    margin: 24px 0 24px 0 
+  }
+
+}
