@@ -23,7 +23,7 @@ var redirectUrl = "https://hardwallet.status.im/welcome.html"
 let data = {
     "hutk": hutk,
     "ipAddress": ip,
-    "pageUrl": "http://localhost:3000/",
+    "pageUrl": "https://status-im.github.io/hardwallet/",
     "pageName": "Status Hardwallet"
 }
 
