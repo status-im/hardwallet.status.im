@@ -29,11 +29,6 @@ function getViewport() {
   return currentViewport
 }
 
-function showFirstIcon() {
-
-}
-
-
 if(scrollTopButton) { scrollTopButton.addEventListener('click', function(event){
     animateScroll(slideOne, 600, "easeInOutCubic", 0)
     event.preventDefault()
