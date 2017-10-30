@@ -13,18 +13,18 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" href="dest/img/new-site/logo-32.png?v=516c1cd" sizes="32x32" />
-  <link rel="icon" type="image/png" href="dest/img/new-site/logo-16.png?v=5108317" sizes="16x16" />
+  <link rel="icon" type="image/png" href="dist/img/new-site/logo-32.png?v=516c1cd" sizes="32x32" />
+  <link rel="icon" type="image/png" href="dist/img/new-site/logo-16.png?v=5108317" sizes="16x16" />
 
-  <link rel="apple-touch-icon" href="dest/img/new-site/apple-touch-icon-1024.png?v=464c5b1">
-  <link rel="apple-touch-icon" sizes="76x76" href="dest/img/new-site/apple-touch-icon-76.png?v=13dde43">
-  <link rel="apple-touch-icon" sizes="120x120" href="dest/img/new-site/apple-touch-icon-120.png?v=e3d71d5">
-  <link rel="apple-touch-icon" sizes="152x152" href="dest/img/new-site/apple-touch-icon-152.png?v=1353ddd">
-  <link rel="apple-touch-icon" sizes="180x180" href="dest/img/new-site/apple-touch-icon-180.png?v=401931a">
-  <link rel="mask-icon" href="dest/img/new-site/logo-mask.svg" color="4360DF">
+  <link rel="apple-touch-icon" href="dist/img/new-site/apple-touch-icon-1024.png?v=464c5b1">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/img/new-site/apple-touch-icon-76.png?v=13dde43">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/img/new-site/apple-touch-icon-120.png?v=e3d71d5">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/img/new-site/apple-touch-icon-152.png?v=1353ddd">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/new-site/apple-touch-icon-180.png?v=401931a">
+  <link rel="mask-icon" href="dist/img/new-site/logo-mask.svg" color="4360DF">
 
   <!-- favicon.ico in the root directory -->
-  <link rel="stylesheet" href="dest/css/main.css?v=a664cb5">
+  <link rel="stylesheet" href="dist/css/main.css?v=a664cb5">
 
 </head>
 
@@ -88,14 +88,19 @@
               <h2 class="tagline__title">A hardware wallet with a safe, contactless transaction experience</h2>
               <div class="tagline__body">Store, send & receive Eth and ERC-20 tokens with&nbsp;Status&nbsp;Hardwallet</div>
               <div class="email-form">
-                <form action="" method="post" name="" class="email-form__form" target="">
+                <!-- Mailchimp -->
+                <form action="https://status.us13.list-manage.com/subscribe/post?u=d0c1a0be2adff281b52e27a7f&amp;id=78f032de8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
                   <div class="email-form__inner">
-                    <input type="text" value="" name="email" class="email-form__input email-form__input--email" placeholder="Enter your email">
-                    <input type="submit" value="Request early access" name="subscribe" class="button email-form__input email-form__input--sumbit">
+                    <input type="email" value="" name="EMAIL" class="required email-input mce-EMAIL email-form__input email-form__input--email" placeholder="Enter your email" aria-required="true">
+                    <input type="submit" value="Request early access" name="subscribe" class="button email-form__input email-form__input--sumbit mc-embedded-subscribe button email-button">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0c1a0be2adff281b52e27a7f_09e2d9ae07" tabindex="-1" value=""></div>
                   </div>
-                  </form>
-                  <div class="email-form__error-message">Sorry, something went wrong with the request. Please <a href="mailto:support@status.im">let us know</a></div>
-                  <div class="email-form__success-message">Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.</div>
+                  <div id="mce-responses" class="email-form__responces">
+                    <div class="response email-form__error-message" id="mce-error-response"></div>
+                    <div class="email-form__success-message response" id="mce-success-response"></div>
+                  </div>
+                </form>
+                <!-- End Mailchimp -->
               </div>
             </div>
           </div>
@@ -242,7 +247,8 @@
     </div>
   </div>
 
-  <script src="dest/js/app.js"></script>
+  <script src="dist/js/main.js"></script>
+  <script src="dist/js/mc-validate.js"></script>
 
   <!-- Google Analytics -->
   <script>

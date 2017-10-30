@@ -256,10 +256,10 @@
 				// Try to parse the error into a field index and a message.
 				// On failure, just put the dump thing into in the msg variable.
 		        var index = -1;
-		        var msg;
+		        var msg, parts;
 		        try {
-		            var parts = resp.msg.split(' - ',2);
-		            if (parts[1]==undefined){
+		            parts = resp.msg.split(' - ',2);
+		            if (parts[1] == undefined){
 		                msg = resp.msg;
 		            } else {
 		                i = parseInt(parts[0]);
@@ -285,6 +285,7 @@
 		                var fieldName = $("input[name*='"+fnames[index]+"']").attr('name'); // Make sure this exists (they haven't deleted the fnames array lookup)
 		                var data = {};
 		                data[fieldName] = msg;
+										console.log(data);
 		                mc.mce_validator.showErrors(data);
 		            }
 								focusOnEmailInput();
@@ -373,7 +374,7 @@
 	});
 
 	$(document).keydown(function(e){
-    keycode = (e == null) ? event.keyCode : e.which;
+    var keycode = (e == null) ? event.keyCode : e.which;
     if (keycode == 27 && typeof mc.showPopup != 'undefined') mc.closePopup();
   });
 

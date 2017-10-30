@@ -2,7 +2,7 @@
   display: flex;
   width: 460px;
   position: relative;
-  padding: 0 0 60px 0;
+  padding: 0 0 0 0;
 }
 
 .email-form.email-form--error .email-form__inner {
@@ -14,6 +14,8 @@
 
 .email-form__responces {
   position: relative;
+  z-index: 200;
+  height: 60px;
   color: rgba(255, 255, 255, .6);
   width: 100%;
   text-align: left;
@@ -24,10 +26,10 @@
 
 .email-form__error-message {
   opacity: 0;
-  position: absolute;
-  width: 460px;
-  text-align: center;
-  top: 44px;
+  // position: absolute;
+  // width: 460px;
+  // text-align: center;
+  // top: 44px;
   color: rgba(255, 255, 255, .5);
   //opacity: 0;
   transform: translate3d(0, 10px, 0);
@@ -43,17 +45,18 @@
 }
 
 .email-form__success-message {
-  position: absolute;
-  top: 60px;
-  left: 0px;
+  // position: absolute;
+  // top: 60px;
+  // left: 0px;
   width: 350px;
   z-index: 900;
   padding: 15px;
   font-size: 15px;
   border-radius: 8px;
   text-align: left;
-  background-color: #3E4C59;
-  color: rgba(255, 255, 255, 1);
+  background: #FFFFFF;
+  box-shadow: 0 5px 14px 0 rgba(0,0,0,0.16);
+  color: #292929;
   line-height: 22px;
 
   opacity: 0;
@@ -72,7 +75,7 @@
 
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid #3E4C59;
+  border-bottom: 14px solid #FFFFFF;
 }
 
 .email-form__success-message.email-form__success-message--shown {
@@ -165,11 +168,13 @@ input.email-form__input--email:disabled {
 
   .email-form, .email-form__inner {
     display: flex;
-    width: 240px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
   }
+
   .email-form__error-message  {
-    width: 240px;
-    top: 104px;
+    width: 300px;
     line-height: 20px;
   }
 
@@ -190,16 +195,16 @@ input.email-form__input--email:disabled {
   }
 
   .email-form__responces {
-    width: 240px;
+    width: 300px;
     text-align: center;
-    margin-bottom: 24px;
-    height: auto;
+    height: 48px;
   }
 
   .email-form__success-message {
-    width: 240px;
-    top: 124px;
+    width: 300px;
+    margin: 0 auto;
   }
+
   .email-form__success-message::after {
     left: 50%;
     margin: 0 0 0 -14px;

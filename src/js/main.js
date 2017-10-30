@@ -3,12 +3,12 @@ let animateScroll = require("./lib/animatescroll.js")
 
 let body = document.querySelectorAll("body")[0]
 
- let slideOne = document.querySelectorAll(".slide--one")[0]
- let slideTwo = document.querySelectorAll(".slide--two")[0]
- let sectionOne = document.querySelectorAll(".section--one")[0]
- let sectionTwo = document.querySelectorAll(".section--two")[0]
- let sectionThree = document.querySelectorAll(".section--three")[0]
- let sectionFour = document.querySelectorAll(".section--four")[0]
+let slideOne = document.querySelectorAll(".slide--one")[0]
+let slideTwo = document.querySelectorAll(".slide--two")[0]
+let sectionOne = document.querySelectorAll(".section--one")[0]
+let sectionTwo = document.querySelectorAll(".section--two")[0]
+let sectionThree = document.querySelectorAll(".section--three")[0]
+let sectionFour = document.querySelectorAll(".section--four")[0]
 
 let scrollTopButton = document.querySelectorAll(".button--scrolltop")[0]
 let scrollToFeatures = document.querySelectorAll(".nav__item-features")[0]
