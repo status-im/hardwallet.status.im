@@ -376,6 +376,9 @@ li.social-link a {
 .social-link.social-link--sl a {
   background-image: url(../img/new-site/icon_sl2.svg); }
 
+.social-link.social-link--ri a {
+  background-image: url(../img/new-site/icon_ri.svg); }
+
 .social-link.social-link--gh a {
   background-image: url(../img/new-site/icon_gh2.svg); }
 
@@ -742,7 +745,7 @@ li.social-link a {
 
 .container-wrap {
   z-index: 2;
-  margin-bottom: 420px;
+  margin-bottom: 480px;
   background-color: #281644;
   background-image: url(../img/pattern@2x.png);
   background-size: 20px;
@@ -1650,6 +1653,9 @@ input.email-form__input--email:disabled {
 
 .footer-link--sl .footer-icon {
   background-image: url(../img/new-site/icon_sl2.svg); }
+
+.footer-link--ri .footer-icon {
+  background-image: url(../img/new-site/icon_ri.svg); }
 
 .footer-link--gh .footer-icon {
   background-image: url(../img/new-site/icon_gh2.svg); }

@@ -16,6 +16,24 @@ let scrollToFeatures = document.querySelectorAll(".nav__item-features")[0]
 setTimeout(() => body.classList.add("shown"), 400)
 //
 
+var viewport = getViewport()
+
+var whenToShowFirstImage = 120
+if(viewport.height > 700) whenToShowFirstImage = 0
+
+function getViewport() {
+  var currentViewport = {}
+  currentViewport.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  currentViewport.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+  return currentViewport
+}
+
+function showFirstIcon() {
+
+}
+
+
 if(scrollTopButton) { scrollTopButton.addEventListener('click', function(event){
     animateScroll(slideOne, 600, "easeInOutCubic", 0)
     event.preventDefault()
@@ -56,7 +74,7 @@ new ScrollOver({
       element : sectionOne,
       reveal:
         {
-          when : 120,
+          when : whenToShowFirstImage,
           className: "section--shown"
         }
     },
