@@ -1,0 +1,75 @@
+.email-form {
+  width: 460px;
+  height:45px;
+  margin: 0 0 60px 0;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.hbspt-form {
+  width: 460px;
+  height:45px;
+}
+
+.hbspt-form form {
+  display: flex;
+  width: 460px;
+  position: relative;
+}
+
+.hbspt-form label {
+  display: none;
+}
+
+.hs_email {
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.hs-input {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  background-color: #F2F6F8;
+  color: #49555F;
+
+  padding: 13px 15px;
+  margin: 0 0 0 0;
+  font-family: 'PostGrotesk-Book', sans-serif;
+
+  border-radius: 8px 0 0 8px;
+
+  transition: background-color .2s ease;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hs_submit {
+  width: 220px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+input[type="submit"].hs-button {
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 44px;
+  padding: 0 20px;
+
+  font-family: $PostGroteskMedium;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: $colorWhite;
+  background-color: #7F44DF;
+  border-radius: 0 8px 8px 0;
+
+  transform: translate3d(0, 0, 0) scale(1);
+  transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
