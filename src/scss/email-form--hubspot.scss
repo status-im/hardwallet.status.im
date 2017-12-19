@@ -1,75 +1,158 @@
 .email-form {
   width: 460px;
-  height:45px;
-  margin: 0 0 60px 0;
+  margin: 0 0 70px 0;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1)
+
+  .hbspt-form {
+    width: 460px;
+
+    form {
+      display: flex;
+      width: 460px;
+      position: relative;
+    }
+
+    .hs-error-msgs {
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 14px;
+      position: absolute;
+      transform: translate3d(0, 10px, 0);
+      transition: transform .2s ease, opacity .2s ease;
+
+      li {
+        text-align: left;
+
+        label {
+          font-size: 14px;
+          font-family: 'PostGrotesk-Book', sans-serif;
+        }
+      }
+    }
+
+    .hs_error_rollup {
+      display: none
+    }
+
+    .submitted-message {
+      padding: 12px;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .hs_email {
+      width: 240px;
+      box-sizing: border-box;
+
+      & > label {
+        display: none;
+      }
+
+      input[type="email"] {
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder {
+          color: #AEB5BA;
+        }
+
+        &:-moz-placeholder {
+          color: rgba(255, 255, 255, .6);
+        }
+      }
+    }
+
+    .hs-input {
+      box-sizing: border-box;
+      height: 45px;
+      width: 100%;
+      text-align: left;
+      background-color: #F2F6F8;
+      color: #49555F;
+
+      padding: 0 15px;
+      margin: 0;
+      font-family: 'PostGrotesk-Book', sans-serif;
+
+      border-radius: 8px 0 0 8px;
+
+      transition: background-color .2s ease;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .hs_submit {
+      width: 220px;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      flex-grow: 0;
+
+      input[type="submit"].hs-button {
+        height: 45px;
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 44px;
+        padding: 0 20px;
+
+        font-family: $PostGroteskMedium;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+
+        color: $colorWhite;
+        background-color: #7F44DF;
+        border-radius: 0 8px 8px 0;
+
+        transform: translate3d(0, 0, 0) scale(1);
+        transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
+        -webkit-appearance: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #945BF0
+        }
+      }
+    }
+  }
 }
 
-.hbspt-form {
-  width: 460px;
-  height:45px;
-}
+@media (max-width: 640px) {
+  .email-form {
+    width: 240px;
 
-.hbspt-form form {
-  display: flex;
-  width: 460px;
-  position: relative;
-}
+    .hbspt-form {
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
 
-.hbspt-form label {
-  display: none;
-}
+        .hs_email input[type="email"] {
+          width: 240px;
+          border-radius: 8px;
+          margin: 0 0 16px 0;
+        }
 
-.hs_email {
-  width: 240px;
-  box-sizing: border-box;
-}
+        .hs_submit {
+          &,
+          input[type="submit"].hs-button {
+            width: 240px;
+            border-radius: 8px;
+          }
+        }
+      }
 
-.hs-input {
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  background-color: #F2F6F8;
-  color: #49555F;
+      .hs-error-msgs {
+        line-height: 20px;
+        margin-top: 44px;
+        width: 100%;
 
-  padding: 13px 15px;
-  margin: 0 0 0 0;
-  font-family: 'PostGrotesk-Book', sans-serif;
-
-  border-radius: 8px 0 0 8px;
-
-  transition: background-color .2s ease;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.hs_submit {
-  width: 220px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-
-input[type="submit"].hs-button {
-  height: 45px;
-  width: 100%;
-  box-sizing: border-box;
-  line-height: 44px;
-  padding: 0 20px;
-
-  font-family: $PostGroteskMedium;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-
-  color: $colorWhite;
-  background-color: #7F44DF;
-  border-radius: 0 8px 8px 0;
-
-  transform: translate3d(0, 0, 0) scale(1);
-  transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
-  -webkit-appearance: none;
-  cursor: pointer;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
