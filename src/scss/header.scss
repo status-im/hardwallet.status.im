@@ -28,6 +28,10 @@
   justify-content: flex-end;
 }
 
+.header-section--left {
+  margin-top: 10px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -54,11 +58,9 @@ a.logo {
 }
 
 .logo__icon {
-  height: 24px;
-  width: 24px;
-  background-image: url(../img/new-site/status-symbol.svg);
-  background-size: 24px;
-  background-position: left;
+  height: 47px;
+  width: 148px;
+  background-image: url(../img/new-site/logo-wordmark.svg);
 }
 
 .logo__text {
