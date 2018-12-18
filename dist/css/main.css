@@ -241,6 +241,9 @@ a {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
+.header-section--left {
+  margin-top: 10px; }
+
 .nav {
   display: -ms-flexbox;
   display: flex;
@@ -272,11 +275,9 @@ a.logo {
   transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease; }
 
 .logo__icon {
-  height: 24px;
-  width: 24px;
-  background-image: url(../img/new-site/status-symbol.svg);
-  background-size: 24px;
-  background-position: left; }
+  height: 47px;
+  width: 148px;
+  background-image: url(../img/new-site/logo-wordmark.svg); }
 
 .logo__text {
   margin: 8px 0 0 10px; }
@@ -701,41 +702,23 @@ li.social-link a {
   background-image: url(../img/new-site/chip@2x.png);
   background-size: 28px; }
 
-.card__logo {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 40px;
-  height: 40px;
-  background-image: url(../img/new-site/cardlogo.svg);
-  background-size: 40px; }
-
-.card--purple .card__logo {
-  background-image: url(../img/new-site/cardlogo-inversed.svg); }
-
-.card__wordmark {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 134px;
-  height: 44px;
-  background-image: url(../img/new-site/cardwordmark.svg);
-  background-size: 134px; }
-
-.card--purple .card__wordmark {
-  background-image: url(../img/new-site/cardwordmark-inversed.svg); }
-
 .card__waves {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  top: 20px;
   width: 20px;
   height: 35px;
   background-image: url(../img/new-site/waves@2x.png);
   background-size: 20px; }
 
-.card--purple .card__waves {
-  background-image: url(../img/new-site/waves-inversed.svg); }
+.card__wordmark {
+  position: absolute;
+  left: 78px;
+  top: 42px;
+  width: 100px;
+  height: 33px;
+  background-image: url(../img/new-site/logo-for-card.svg);
+  background-size: contain; }
 
 @media (max-width: 400px) {
   .card.card--purple {
